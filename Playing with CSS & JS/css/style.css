@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --clr-main: #333;
+    --clr-second: #555;
+    --clr-bgc: #fff;
+    --clr-pop: #ffb6c1;
+}
+body{
+    /* standard font size is 16px */
+    font-family: monospace;
+}
+
+.title-container{
+    background-color: var(--clr-main);
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title-container:hover{
+    background-color: var(--clr-second);
+}
+.title-container h1{
+    color: var(--clr-bgc);
+    font-size: 3rem;
+    font-style: italic;
+}
+@media (max-width: 950px) {
+    .title-container h1{
+        font-size: 2rem;
+    }
+}
+
+.content-container{
+    width: 100%;
+    text-align: center;
+}
+.content-container h1{
+    margin: 2%;
+}
+.jsMe{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: 60vh;
+    background-color: var(--clr-pop);
+}
+#btn{
+    margin-top: 2%;
+    width: 20rem;
+    height: 10rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-style: italic;
+    background-color: var(--clr-main);
+    color: var(--clr-bgc);
+    border-radius: 10px;
+    border: 10px double var(--clr-bgc);
+}
+#btn:hover{
+    background-color: var(--clr-second);
+    color: var(--clr-pop);
+    cursor: pointer;
+}
+#clicked{
+    margin-top: -2%;
+    font-size: 1.6rem;
+}
+#myCard{
+    margin-top: 8%;
+    font-size: 1.3rem;
+}
