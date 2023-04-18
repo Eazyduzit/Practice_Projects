@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --bg-color: white;
+    --rgb-color: rgb(239, 191, 248);
+    --hex-color: #fa655d;
+    --hsl-color: hsl(84, 57%, 69%);
+}
+body{
+    background-color: var(--bg-color);
+    height: 80vh;
+    margin: 50px;
+}
+
+.rgb, .hex, .hsl{
+    height: 200px;
+    border-radius: 25px;
+    border: 2px solid black;
+    font-size: 1.5rem;
+    font-style: italic;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rgb{
+    background-color: var(--rgb-color);
+}
+.hex{
+    background-color: var(--hex-color);
+    margin-top: 50px;
+}
+.hsl{
+    background-color: var(--hsl-color);
+    margin-top: 50px;
+}
